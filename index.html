@@ -95,6 +95,7 @@
                 "61.8%": high - increase * 0.618
             };
             let resultHTML = "<h3>上涨回调位：</h3>";
+            resultHTML += `<p>上涨幅度（Increase）：${increase.toFixed(2)}</p>`;
             for (const [level, value] of Object.entries(levels)) {
                 resultHTML += `<p>${level}: ${value.toFixed(2)}</p>`;
             }
@@ -116,6 +117,7 @@
                 "61.8%": low + decrease * 0.618
             };
             let resultHTML = "<h3>下跌回调位：</h3>";
+            resultHTML += `<p>下跌幅度（Decrease）：${decrease.toFixed(2)}</p>`;
             for (const [level, value] of Object.entries(levels)) {
                 resultHTML += `<p>${level}: ${value.toFixed(2)}</p>`;
             }
